@@ -68,3 +68,11 @@ Code Explanations
 
 Why should the five values and the average use the double data type?
 The double type supports decimal numbers. Computing averages involves division, which frequently results in decimals even if the starting inputs are integers. Using double prevents losing decimal precision.
+
+Trace the assigned values through sum and average.
+
+Inputs: val1 = 28, val2 = 32, val3 = 37, val4 = 24, val5 = 33
+
+Sum calculation: 28 + 32 + 37 + 24 + 33 = 154
+
+Average calculation: 154.0 / 5.0 = 30.8
