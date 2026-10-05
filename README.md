@@ -63,3 +63,8 @@ Expected results: 5 yrs: 10.0 mm, 7 yrs: 14.0 mm, 10 yrs: 20.0 mm
 Actual results: 5 yrs: 10 mm, 7 yrs: 14 mm, 10 yrs: 20 mm
 
 Result: Match
+
+Code Explanations
+
+Why should the five values and the average use the double data type?
+The double type supports decimal numbers. Computing averages involves division, which frequently results in decimals even if the starting inputs are integers. Using double prevents losing decimal precision.
