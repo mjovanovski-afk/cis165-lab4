@@ -67,7 +67,7 @@ Result: Match
 Code Explanations
 
 Why should the five values and the average use the double data type?
-The double type supports decimal numbers. Computing averages involves division, which frequently results in decimals even if the starting inputs are integers. Using double prevents losing decimal precision.
+Double supports decimal numbers. Computing averages involves division, which results in decimals frequently even if the starting inputs are integers. Using double prevents losing decimal precision.
 
 Trace the assigned values through sum and average.
 
@@ -76,3 +76,15 @@ Inputs: val1 = 28, val2 = 32, val3 = 37, val4 = 24, val5 = 33
 Sum calculation: 28 + 32 + 37 + 24 + 33 = 154
 
 Average calculation: 154.0 / 5.0 = 30.8
+
+Why should the average calculation divide the completed sum rather than only the final value?
+An average requires finding the total of all numbers before dividing by the amount of numbers. Without taking the full sum first, only the final value would be divided by 5, leading to an incorrect result.
+
+Explain how the ocean-level calculations use the annual rate and number of years.
+Each projection calculates the total level increase using multiplication: Total Rise = Annual Rate * Years. Multiplying the fixed rate of 1.5 mm per year by each target number of years gives the projected rise in millimeters.
+
+Why is the annual ocean-level rate a good candidate for a named constant?
+The rate of ocean level rise is a fixed value throughout the program. Declaring it as a constant prevents accidental changes during execution and makes the code easier to read.
+
+Why does the assignment require calculations to be stored before using cout?
+Storing calculations in variables separates the math logic from the display logic. This makes the code cleaner, easier to debug, and simpler to reuse later.
